@@ -2,11 +2,23 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Портфолио</title>
+    <title>Игры</title>
     <link rel="shortcut icon" href="../img/title/title.png" type="image/png">
     <link rel="stylesheet" href="../pro_stylesheet.css">
 </head>
 <body>
+    <script>
+        var a = 0;
+        function PlayUnPlay(){
+            if (a == 0){
+                a = 1;
+                document.getElementById('player').pause()
+            } else {
+                a = 0;
+                document.getElementById('player').play()
+            }
+        }
+    </script>
     <div id="header">
         <span>//</span>
         <a href="../index.html">Главная</a>
@@ -23,9 +35,13 @@
             <br>
             <a href=""><img src="../img/we/to_top.png"></a>
             <br>
+            <button onclick=PlayUnPlay()><img src="../img/we/pause.png"></button>
+            <audio id="player" src="../audio/narcotic.mp3" autoplay loop></audio>
+            <br>
             <a href="http://vk.com/dalekcaan" target="_blank"><img src="../img/we/vk.png"></a>
             <br>
         </div>
+        <p style="min-height: 2000px"></p>
     </div>
     <div id="bottom">
         #
