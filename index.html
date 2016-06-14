@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="pro_stylesheet.css">
+    <link rel="shortcut icon" href="img/title/title.png" type="image/png">
+</head>
+<body>
+    <script>
+        var a = 0;
+        function PlayUnPlay(){
+            if (a == 0){
+                a = 1;
+                document.getElementById('player').pause()
+            } else {
+                a = 0;
+                document.getElementById('player').play()
+            }
+        }
+    </script>
+    <div id="header">
+        <span>//</span>
+        <div id="position">
+            <a href="">Главная</a>
+        </div>
+        <span>//</span>
+        <a href="portfolio/portfolio.html">Портфолио</a>
+        <span>//</span>
+        <a href="game/game.html">Игры</a>
+        <span>//</span>
+    </div>
+    <div id="center">
+        <div id="left_bord">
+            <br>
+            <a href=""><img src="img/we/to_top.png"></a>
+            <br>
+            <button onclick=PlayUnPlay()><img src="img/we/pause.png"></button>
+            <audio id="player" src="audio/narcotic.mp3" autoplay loop></audio>
+            <br>
+            <a href="http://vk.com/dalekcaan" target="_blank"><img src="img/we/vk.png"></a>
+            <br>
+        </div>
+        <h1>Персонатьный сайт Александра Земскова.</h1>
+    </div>
+    <div id="bottom">
+        #
+    </div>
+</body>
+</html>
