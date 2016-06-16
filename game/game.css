@@ -24,10 +24,21 @@ body #center #game_board #game_set #CenterButton{
 }
 
 body #center #game_board #game_set #CenterButton #HelpButton{
-    color: greenyellow;
-    min-height: 150px;
-    min-width: 300px;
+    color: firebrick;
+    min-height: 120px;
+    min-width: 200px;
     margin-top: 80px;
-    background: lemonchiffon;
+    background: aliceblue;
     border-radius: 12px;
+    font-size: 47px;
+}
+
+body #center #game_board #game_set #CenterButton #StartButton{
+    color: darkgreen;
+    min-height: 120px;
+    min-width: 200px;
+    margin-top: 80px;
+    background: gainsboro;
+    border-radius: 12px;
+    font-size: 47px;
 }
