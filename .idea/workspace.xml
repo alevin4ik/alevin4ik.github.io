@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0505cb94-1f8c-4cbe-9bc1-513570a698cd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/21/21.js" afterPath="$PROJECT_DIR$/game/21/21.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/21/index.html" afterPath="$PROJECT_DIR$/game/21/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game/game.css" afterPath="$PROJECT_DIR$/game/game.css" />
     </list>
     <ignored path="alevin4ik.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,8 +56,8 @@
       <file leaf-file-name="21.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/game/21/21.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+            <state relative-caret-position="324">
+              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -220,12 +218,12 @@
       <option name="presentableId" value="Default" />
       <updated>1466078301376</updated>
       <workItem from="1466078303144" duration="10234000" />
-      <workItem from="1466100603948" duration="5356000" />
+      <workItem from="1466100603948" duration="6346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15590000" />
+    <option name="totallyTimeSpent" value="16580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="21" width="1309" height="747" extended-state="6" />
@@ -362,8 +360,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/game/21/21.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        <state relative-caret-position="324">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
