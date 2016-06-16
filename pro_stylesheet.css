@@ -48,21 +48,31 @@ body #center #left_bord{
     border: 1px solid #b5b7ba;
     border-radius: 10px;
     color: black;
-    min-width: 25px;
+    max-width: 25px;
     position: fixed;
     background: url(img/bg_txt/white_bg_40.png);
 }
 
 body #center #left_bord a img{
+    font-size: 16px;
+    padding: 0;
     margin-left: 4px;
 }
+
 body #center #left_bord button{
-    margin-left: 4px;
+    font-size: 16px;
+    padding: 0;
     outline: none;
     border: none;
+    background: none;
+    margin-left: 4px;
     max-height: 16px;
     max-width: 16px;
-    background: none;
+}
+
+body #center #left_bord button img{
+    font-size: 16px;
+    padding: 0;
 }
 
 body #center h1{
@@ -90,6 +100,7 @@ body #center img{
 }
 
 body #center #info_board{
+    margin-left: 30px;
     padding-top: 15px;
     padding-bottom: 27px;
     border: 2px solid #b5b7ba;
