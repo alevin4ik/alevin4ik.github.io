@@ -116,33 +116,3 @@ body #center #info_board p{
     margin-top: 10px;
     margin-left: 20px;
 }
-
-body #center #trash_all{
-    display: inline;
-}
-
-body #center #trash_all img{
-    width: 400px;
-    height: 400px;
-    padding: 7px;
-}
-
-body #center #trash_height{
-    display: inline;
-}
-
-body #center #trash_height img{
-    width: 400px;
-    height: 370px;
-    padding: 7px;
-}
-
-body #center #trash_width{
-    display: inline;
-}
-
-body #center #trash_width img{
-    width: 500px;
-    height: 370px;
-    padding: 7px;
-}

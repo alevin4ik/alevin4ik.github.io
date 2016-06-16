@@ -1,0 +1,22 @@
+body #center #game_board{
+    margin-top: 90px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 50px;
+    border: 2px solid #b5b7ba;
+    background: url(../img/bg_txt/black_bg_80.png);
+    min-width: 430px;
+}
+
+body #center #game_board #game_set{
+    color: honeydew;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    resize: none;
+    outline: none;
+    border: none;
+}
