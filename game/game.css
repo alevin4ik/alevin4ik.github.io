@@ -56,3 +56,33 @@ body #center #game_board #game_set #NameStart{
     font-size: 25px;
     background: none;
 }
+
+body #center #game_board #game_set #Me{
+    text-align: center;
+}
+
+body #center #game_board #game_set #Me button{
+    margin-top: 50px;
+    margin-left: 20px;
+    color: honeydew;
+    min-height: 50px;
+    font-size: 25px;
+    background: none;
+    text-align: center;
+}
+
+body #center #game_board #game_set #img{
+    text-align: center;
+}
+
+body #center #game_board #game_set #img img{
+    width: 150px;
+    height: 225px;
+    border: 2px solid #b5b7ba;
+}
+
+body #center #game_board #game_set #bord_point{
+    color: darkgreen;
+    font-size: 27px;
+    text-align: center;
+}
