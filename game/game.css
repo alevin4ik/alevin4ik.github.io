@@ -14,11 +14,8 @@ body #center #game_board #game_set{
     color: honeydew;
     width: 100%;
     min-height: 400px;
-    height: 100%;
-    resize: none;
-    outline: none;
-    border: none;
 }
+
 body #center #game_board #game_set #CenterButton{
     text-align: center;
 }
@@ -41,4 +38,21 @@ body #center #game_board #game_set #CenterButton #StartButton{
     background: gainsboro;
     border-radius: 12px;
     font-size: 47px;
+}
+
+body #center #game_board #game_set #Name{
+    margin-top: 50px;
+    color: honeydew;
+    min-height: 50px;
+    font-size: 25px;
+    background: none;
+}
+
+body #center #game_board #game_set #NameStart{
+    margin-top: 50px;
+    margin-left: 20px;
+    color: honeydew;
+    min-height: 50px;
+    font-size: 25px;
+    background: none;
 }
