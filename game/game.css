@@ -86,3 +86,9 @@ body #center #game_board #game_set #bord_point{
     font-size: 27px;
     text-align: center;
 }
+
+body #center #game_board #game_set #text_box{
+    text-align: center;
+    font-size: 47px;
+}
+

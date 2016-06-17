@@ -2,7 +2,7 @@
  * Created by alevin on 16.06.16.
  */
 var Help_list, Help_str0, Help_str1, Help_str2,  Help_str3, Help_str4;
-var playername, playerpoint = 0, machinpoint, pointRand, randCard;
+var playername, playerpoint = 0, machinpoint = 0, machineRand, pointRand, randCard;
 var printCard, bordpoint;
 
 Help_str0 = "<h2>Правила игры в 21 :<h2>";
@@ -24,6 +24,8 @@ function GiveName() {
 }
 
 function PreStat() {
+    playerpoint = 0;
+    Pre_machin_gene();
     document.getElementById('game_set').innerHTML = "";
     document.getElementById('game_set').innerHTML += "<input id=\"Name\" type=\"text\" placeholder=\"Имя набирать тут\" id=\"name_tag\">";
     document.getElementById('game_set').innerHTML += "<button id=\"NameStart\" onclick=\"style.display='none';GiveName()\">Принять</button>";
@@ -84,8 +86,19 @@ function point_random() {
 function CloseGame() {
     document.getElementById('game_set').innerHTML = "";
     if (playerpoint == 21){
-        document.getElementById('game_set').innerHTML = "<b>Вы победили!</b>";
+        document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Поздравляю " + playername + ".</b><br><b>Вы победили!</b></div>";
+    }else if (playerpoint > 21){
+        document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Сочувствую " + playername + ".</b><br><b>Вы проиграли!</b></div>";
+    }else if(machinpoint > 21) {
+        document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Поздравляю " + playername + ".</b><br><b>Вы победили!</b></div>";
+    }else if(playerpoint > machinpoint){
+        document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Поздравляю " + playername + ".</b><br><b>Вы победили!</b></div>";
+    }else if(playerpoint > machinpoint){
+        document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Сочувствую " + playername + ".</b><br><b>Вы сыграли в ничью!</b></div>";
+    }else{
+        document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Сочувствую " + playername + ".</b><br><b>Вы проиграли!</b></div>";
     }
+    document.getElementById('game_set').innerHTML += "<div id=\"CenterButton\"><button id=\"StartButton\" onclick=\"style.display='none';PreStat()\">Начать заново</button></div>";
 }
 
 function bord_name() {
@@ -97,6 +110,51 @@ function Nv() {
         CloseGame();
     }else if (playerpoint > 21){
         CloseGame();
+    }
+}
+
+function Pre_machin_gene() {
+    machineRand = Math.floor(Math.random() * 8);
+    if (machineRand == 0) {
+        machinpoint = machinpoint + 11;
+    } else if (machineRand == 1) {
+        machinpoint = machinpoint + 10;
+    } else if (machineRand == 2) {
+        machinpoint = machinpoint + 9;
+    } else if (machineRand == 3) {
+        machinpoint = machinpoint + 8;
+    } else if (machineRand == 4) {
+        machinpoint = machinpoint + 7;
+    } else if (machineRand == 5) {
+        machinpoint = machinpoint + 6;
+    } else if (machineRand == 6) {
+        machinpoint = machinpoint + 4;
+    } else if (machineRand == 7) {
+        machinpoint = machinpoint + 3;
+    } else if (machineRand == 8) {
+        machinpoint = machinpoint + 2;
+    }
+    if (machinpoint < 21 && Math.floor(Math.random()) == 0) {
+        machineRand = Math.floor(Math.random() * 8);
+        if (machineRand == 0) {
+            machinpoint = machinpoint + 11;
+        } else if (machineRand == 1) {
+            machinpoint = machinpoint + 10;
+        } else if (machineRand == 2) {
+            machinpoint = machinpoint + 9;
+        } else if (machineRand == 3) {
+            machinpoint = machinpoint + 8;
+        } else if (machineRand == 4) {
+            machinpoint = machinpoint + 7;
+        } else if (machineRand == 5) {
+            machinpoint = machinpoint + 6;
+        } else if (machineRand == 6) {
+            machinpoint = machinpoint + 4;
+        } else if (machineRand == 7) {
+            machinpoint = machinpoint + 3;
+        } else if (machineRand == 8) {
+            machinpoint = machinpoint + 2;
+        }
     }
 }
 
