@@ -93,8 +93,8 @@ function CloseGame() {
         document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Поздравляю " + playername + ".</b><br><b>Вы победили!</b></div>";
     }else if(playerpoint > machinpoint){
         document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Поздравляю " + playername + ".</b><br><b>Вы победили!</b></div>";
-    }else if(playerpoint > machinpoint){
-        document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Сочувствую " + playername + ".</b><br><b>Вы сыграли в ничью!</b></div>";
+    }else if(playerpoint == machinpoint){
+        document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Поздравляю " + playername + ".</b><br><b>Вы сыграли в ничью!</b></div>";
     }else{
         document.getElementById('game_set').innerHTML += "<div id=\"text_box\"><b>Сочувствую " + playername + ".</b><br><b>Вы проиграли!</b></div>";
     }
@@ -114,6 +114,7 @@ function Nv() {
 }
 
 function Pre_machin_gene() {
+    machinpoint = 0;
     machineRand = Math.floor(Math.random() * 8);
     if (machineRand == 0) {
         machinpoint = machinpoint + 11;
