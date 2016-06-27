@@ -5,6 +5,7 @@ body #center #game_board{
     padding-top: 50px;
     padding-right: 25px;
     padding-left: 25px;
+    padding-bottom: 25px;
     border: 2px solid #b5b7ba;
     background: url(../img/bg_txt/black_bg_80.png);
     min-width: 430px;
@@ -92,3 +93,19 @@ body #center #game_board #game_set #text_box{
     font-size: 47px;
 }
 
+body #center #game_button{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 32px;
+}
+
+body #center #game_button button {
+    color: honeydew;
+    margin-top: 10px;
+    font-size: 32px;
+    border: 10px;
+    border-radius: 4px;
+    min-width: 100px;
+    min-height: 40px;
+    background: url("../img/bg_txt/black_bg_60.png");
+}

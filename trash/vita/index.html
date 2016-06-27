@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link rel="stylesheet" href="../../pro_stylesheet.css">
+    <link rel="shortcut icon" href="../../img/title/title.png" type="image/png">
+</head>
+<body>
+    <script>
+        var a = 0;
+        function PlayUnPlay(){
+            if (a == 0){
+                a = 1;
+                document.getElementById('player').pause()
+            } else {
+                a = 0;
+                document.getElementById('player').play()
+            }
+        }
+    </script>
+    <div id="header">
+        <span>//</span>
+        <a href="../../">Главная</a>
+        <span>//</span>
+        <div id="position">
+            <a href="../">Корзинка</a>
+        </div>
+        <span>//</span>
+        <a href="../../portfolio/">Портфолио</a>
+        <span>//</span>
+        <a href="../../game/">Игры</a>
+        <span>//</span>
+    </div>
+    <div id="center">
+        <div id="left_bord">
+            <br>
+            <a href="#top" onclick="self.scrollTo(0, 0); return false;"><img src="../../img/we/to_top.png"></a>
+            <br>
+            <button onclick=PlayUnPlay()><img src="../../img/we/pause.png"></button>
+            <audio id="player" src="../../audio/prog_love.mp3" loop></audio>
+            <br>
+            <a href="http://vk.com/dalekcaan" target="_blank"><img src="../../img/we/vk.png"></a>
+            <br>
+        </div>
+        <h1>Конкурс Виталины.</h1>
+        <div align="center">
+            <video width="600" height="430" src="video/vita.mp4" controls></video>
+        </div>
+    </div>
+    <div id="bottom">
+        #
+    </div>
+</body>
+</html>

@@ -109,7 +109,10 @@ function Nv() {
     if (playerpoint == 21){
         CloseGame();
     }else if (playerpoint > 21){
-        CloseGame();
+        document.getElementById('game_set').innerHTML = bordpoint + "<br>";
+        document.getElementById('game_set').innerHTML += printCard + "<br>";
+        document.getElementById('game_set').innerHTML += "<div id=\"Me\"><button onclick=\"style.display='none';CloseGame()\">Конец</button></div>";
+
     }
 }
 
